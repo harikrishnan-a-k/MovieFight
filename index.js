@@ -19,7 +19,7 @@ const reusableConfigObject={
         return ` ${movie.Title} (${movie.Year})`;
     },
     async fetchData(searchInput){
-        const response= await axios.get('http://www.omdbapi.com/',{
+        const response= await axios.get('https://www.omdbapi.com/',{
             params:{
                 apikey:'cf73c17a',
                 s:searchInput
@@ -61,7 +61,7 @@ let rightMovie;
 
 // function to be called when user select a perticular movie from dropdown list.
 const onMovieSelect=async (movie,fullResultDiv,side)=>{
-    const response= await axios.get('http://www.omdbapi.com/',{
+    const response= await axios.get('https://www.omdbapi.com/',{
         params:{
             apikey:'cf73c17a',
             i:movie.imdbID
