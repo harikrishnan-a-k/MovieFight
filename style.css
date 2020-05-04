@@ -1,5 +1,6 @@
 *{
-	touch-action: manipulation;
+  /* touch-action: manipulation; */
+  touch-action: none;
 }
 .tutorial {
   width: 600px;
@@ -52,4 +53,5 @@ figure .image img {
 
 input:focus { 
   font-size: 16px!important
+
 }
